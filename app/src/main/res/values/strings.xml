@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IntroButterKnife</string>
+    <string name="title_phone_directory">Phone Directory</string>
+    <string name="intro_to_butterknife">Intro to ButterKnife...</string>
+    <string name="et_email">email</string>
+    <string name="label_enter_the_text">Enter the text</string>
+    <string name="label_login">LOGIN</string>
+    <string name="hint_enter_your_name">enter your user name</string>
+    <string name="hint_enter_your_pass">enter your password</string>
+    <string name="toast_entered">You have entered: </string>
+    <string name="toast_enter_input">Please enter the input!</string>
+    <string name="name">Name: \u0020</string>
+    <string name="number">Number: \u0020</string>
+    <string name="label_list">list</string>
+    <string name="error_input">Input cannot be blank!</string>
+</resources>
