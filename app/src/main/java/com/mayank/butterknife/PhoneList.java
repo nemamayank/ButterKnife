@@ -16,14 +16,14 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class PhoneDirectory extends AppCompatActivity {
+public class PhoneList extends AppCompatActivity {
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
 
-    private List<ContactsDirectory> listContacts = new ArrayList<>();
+    private List<ContactsModel> listContacts = new ArrayList<>();
     private ContactsAdapter mAdapter;
 
     @Override
@@ -46,7 +46,7 @@ public class PhoneDirectory extends AppCompatActivity {
     }
 
     private void initContactAdapter() {
-        mAdapter = new ContactsAdapter(listContacts,PhoneDirectory.this);
+        mAdapter = new ContactsAdapter(listContacts,PhoneList.this);
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
@@ -59,14 +59,14 @@ public class PhoneDirectory extends AppCompatActivity {
     }
 
     private void prepareContacts() {
-        listContacts.add(new ContactsDirectory("flacons","9989"));
-        listContacts.add(new ContactsDirectory("metallophone","66567"));
-        listContacts.add(new ContactsDirectory("amoebean","4547"));
-        listContacts.add(new ContactsDirectory("prattler","9089"));
-        listContacts.add(new ContactsDirectory("estamene","5413"));
-        listContacts.add(new ContactsDirectory("lorem","0961"));
-        listContacts.add(new ContactsDirectory("ipsum","2690"));
-        listContacts.add(new ContactsDirectory("somiani","2389"));
+        listContacts.add(new ContactsModel("flacons","9989"));
+        listContacts.add(new ContactsModel("metallophone","66567"));
+        listContacts.add(new ContactsModel("amoebean","4547"));
+        listContacts.add(new ContactsModel("prattler","9089"));
+        listContacts.add(new ContactsModel("estamene","5413"));
+        listContacts.add(new ContactsModel("lorem","0961"));
+        listContacts.add(new ContactsModel("ipsum","2690"));
+        listContacts.add(new ContactsModel("somiani","2389"));
 
         mAdapter.notifyDataSetChanged();
     }

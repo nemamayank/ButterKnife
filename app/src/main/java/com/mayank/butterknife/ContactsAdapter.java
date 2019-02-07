@@ -18,10 +18,10 @@ import butterknife.ButterKnife;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyViewHolder> {
 
-    private List<ContactsDirectory> mContacts;
+    private List<ContactsModel> mContacts;
     private Context mContext;
 
-    public ContactsAdapter(List<ContactsDirectory> contacts, Context context) {
+    public ContactsAdapter(List<ContactsModel> contacts, Context context) {
         this.mContacts = contacts;
         this.mContext = context;
     }
@@ -51,7 +51,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyView
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        ContactsDirectory contact = mContacts.get(position);
+        ContactsModel contact = mContacts.get(position);
         holder.name.setText(mContext.getString(R.string.name) + contact.getName().toUpperCase());
         holder.number.setText(mContext.getString(R.string.number) + contact.getNumber());
     }

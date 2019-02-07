@@ -21,7 +21,7 @@
         <activity android:name=".MainActivity" />
 
         <activity
-            android:name=".PhoneDirectory"
+            android:name=".PhoneList"
             android:label="@string/title_phone_directory"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

@@ -4,11 +4,11 @@ package com.mayank.butterknife;
  *
  */
 
-public class ContactsDirectory {
+public class ContactsModel {
     String name;
     String number;
 
-    public ContactsDirectory(String name, String mobile) {
+    public ContactsModel(String name, String mobile) {
         this.name = name;
         this.number = mobile;
     }

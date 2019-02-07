@@ -90,6 +90,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Validate the input fields
         if (isValidInputDetails())
-            startActivity(new Intent(this, PhoneDirectory.class));
+            startActivity(new Intent(this, PhoneList.class));
     }
 }
